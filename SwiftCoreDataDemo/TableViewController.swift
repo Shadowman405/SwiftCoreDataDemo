@@ -15,6 +15,21 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let context = getContext()
+        let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: false)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        do {
+            tasks = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -56,8 +71,7 @@ class TableViewController: UITableViewController {
     }
     
     private func saveClicked(withTitle title: String) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        let context = getContext()
         
         guard let entity = NSEntityDescription.entity(forEntityName: "Task", in: context) else {return}
         
@@ -66,9 +80,14 @@ class TableViewController: UITableViewController {
         
         do {
             try context.save()
-            
+            tasks.append(taskObject)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+    }
+    
+    private func getContext() -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
     }
 }
