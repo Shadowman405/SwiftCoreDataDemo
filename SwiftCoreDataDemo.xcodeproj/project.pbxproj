@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		BFE6D916276E2ACD0032556C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6D915276E2ACD0032556C /* AppDelegate.swift */; };
 		BFE6D918276E2ACD0032556C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6D917276E2ACD0032556C /* SceneDelegate.swift */; };
-		BFE6D91A276E2ACD0032556C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6D919276E2ACD0032556C /* ViewController.swift */; };
 		BFE6D91D276E2ACE0032556C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE6D91B276E2ACE0032556C /* Main.storyboard */; };
 		BFE6D920276E2ACE0032556C /* SwiftCoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE6D91E276E2ACE0032556C /* SwiftCoreDataDemo.xcdatamodeld */; };
 		BFE6D922276E2AF40032556C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE6D921276E2AF40032556C /* Assets.xcassets */; };
 		BFE6D925276E2AF40032556C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE6D923276E2AF40032556C /* LaunchScreen.storyboard */; };
+		BFE6D92D276E2C960032556C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6D92C276E2C960032556C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFE6D912276E2ACD0032556C /* SwiftCoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE6D915276E2ACD0032556C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE6D917276E2ACD0032556C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFE6D919276E2ACD0032556C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFE6D91C276E2ACE0032556C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE6D91F276E2ACE0032556C /* SwiftCoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftCoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		BFE6D921276E2AF40032556C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE6D924276E2AF40032556C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE6D926276E2AF40032556C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE6D92C276E2C960032556C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		BFE6D914276E2ACD0032556C /* SwiftCoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFE6D92C276E2C960032556C /* TableViewController.swift */,
 				BFE6D915276E2ACD0032556C /* AppDelegate.swift */,
 				BFE6D917276E2ACD0032556C /* SceneDelegate.swift */,
-				BFE6D919276E2ACD0032556C /* ViewController.swift */,
 				BFE6D91B276E2ACE0032556C /* Main.storyboard */,
 				BFE6D921276E2AF40032556C /* Assets.xcassets */,
 				BFE6D923276E2AF40032556C /* LaunchScreen.storyboard */,
@@ -140,10 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE6D91A276E2ACD0032556C /* ViewController.swift in Sources */,
 				BFE6D916276E2ACD0032556C /* AppDelegate.swift in Sources */,
 				BFE6D918276E2ACD0032556C /* SceneDelegate.swift in Sources */,
 				BFE6D920276E2ACE0032556C /* SwiftCoreDataDemo.xcdatamodeld in Sources */,
+				BFE6D92D276E2C960032556C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
